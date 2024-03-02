@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="../images/mail1.svg">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            border-bottom: 1px solid #ccc; /* Optional: Add a border at the bottom */
+            z-index: 1000; /* Ensure the header is above other content */
+        }
+
+        /* Navigation styles */
+        .dropdown-nav ul {
+            list-style: none;
+            text-align: center; /* Center the list items */
+        }
+
+            .dropdown-nav ul li {
+                display: inline-block;
+                position: relative;
+            }
+
+                .dropdown-nav ul li a {
+                    display: block;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                .dropdown-nav ul li:hover > ul {
+                    display: block;
+                }
+
+        /* Dropdown menu styles */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 1;
+            width: 200px; /* Adjust width as needed */
+        }
+
+            .dropdown-menu li {
+                display: block;
+            }
+
+                .dropdown-menu li a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                /* Remove background color change on hover */
+                .dropdown-menu li:hover a {
+                    background-color: transparent;
+                }
+
+        /* Footer styles */
+        .footer {
+            background-color: #4E567E; /* Apply the desired color */
+            color: white;
+            padding: 10px; /* Adjust padding as needed */
+            left: 0;
+            bottom: 0;
+            width: 100%; /* Set width to 100% of the viewport */
+            height: 200px; /* Set footer height to 200 pixels */
+            display: flex;
+            flex-direction: column; /* Change to column layout */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            width: 100%; /* Ensure the links span the width of the footer */
+            margin-bottom: 10px; /* Adjust margin to create space between images and text */
+        }
+
+            .footer-links a {
+                margin: 0 10px; /* Adjust margin between images */
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+            }
+
+                .footer-links a img {
+                    width: 30px; /* Set image width to 30 pixels */
+                    height: 30px; /* Set image height to 30 pixels */
+                }
+
+        .creator-info {
+            text-align: center; /* Align the text to the center */
+            font-size: 15px; /* Adjust the font size as needed */
+            color: white; /* Adjust the color of the text */
+            margin-top: 10px; /* Add margin to push the text lower */
+        }
+
+        .download-button {
+            background-color: blue; /* Blue background color */
+            color: white; /* White text color */
+            padding: 10px 20px; /* Add padding to increase button size */
+            font-size: 16px; /* Increase font size */
+            border: none; /* Remove border */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            border-radius: 5px; /* Add rounded corners */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Display as inline-block element */
+            margin-top: 200px;
+            margin-left: -40px;
+        }
+
+            .download-button:hover {
+                background-color: darkblue; /* Darker blue color on hover */
+            }
+
+        /* CSS for arrows */
+        .scroll-arrow {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            cursor: pointer;
+            z-index: 9999; /* Ensure arrows stay on top of other elements */
+        }
+
+        .up-arrow {
+            right: 40px; /* Adjust this value for desired separation */
+        }
+
+        .down-arrow {
+            right: 40px; /* Adjust this value for desired separation */
+            top: calc(50% + 25px); /* Adjust this value to position the down arrow lower */
+        }
+
+        .image-container {
+            position: relative;
+            width: 400px; /* Adjust width as needed */
+            height: 400px; /* Adjust height as needed */
+            overflow: hidden;
+            margin: 0 auto; /* Center the container horizontally */
+            left: -50px; /* Adjust the left position as needed */
+        }
+
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 20px; /* Adjust border radius as needed for rounded corners */
+            transition: transform 0.5s ease-in-out;
+        }
+
+            .slide img {
+                width: 100%; /* Increase the width of the image */
+                height: 100%; /* Increase the height of the image */
+                object-fit: cover;
+            }
+
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #prevBtn {
+            right: 5px;
+        }
+
+        #nextBtn {
+            left: 5px;
+        }
+    </style>
+
+    <!-- Blocs compétences -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            let currentIndex = 0;
+
+            // Function to display current slide
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.style.transform = `translateX(0)`;
+                    } else {
+                        slide.style.transform = `translateX(${100 * (i - index)}%)`;
+                    }
+                });
+            }
+
+            // Event listener for previous button
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                showSlide(currentIndex);
+            });
+
+            // Event listener for next button
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            });
+
+            // Initially display the first slide
+            showSlide(currentIndex);
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="dropdown-nav">
+            <ul>
+                <li>
+                    <a href="#">Présentation</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index">Apprenti</a></li>
+                        <li><a href="entreprise">Entreprise</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Epreuve E4</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tableausynthese">Tableau de synthèse</a></li>
+                        <li><a href="missionsformation">Missions réalisées en formation</a></li>
+                        <li><a href="missionsentreprise">Missions réalisées en entreprise</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Epreuve E5</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="situations">Situations</a></li>
+                        <li><a href="productions">Productions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Veille</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="veille">Veille</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Arrows -->
+    <div class="scroll-arrow up-arrow">
+        <img src="../images/uparrow.png" alt="Up Arrow">
+    </div>
+    <div class="scroll-arrow down-arrow">
+        <img src="../images/downarrow.png" alt="Down Arrow">
+    </div>
+
+
+    <!-- Desk -->
+    <div id="Desk">
+        <img src="/images/Desk.png" alt="Desk" style="max-width: 100%; max-height: 100%; margin-bottom:-5px" />
+        <div style="position: absolute; top: 50%; left: 30%; transform: translate(-50%, -50%); text-align: center; color: white; ">
+            <span style="font-size: 70px;">Zachary Winkler</span><br />
+            <span style="font-size: 35px;">Apprenti informaticien</span>
+        </div>
+    </div>
+
+    <!-- Presentation -->
+    <div id="presentation" style="background-color: #f3f3f3; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+        <div id="imagepresentation">
+            <img src="/images/presentation.png" />
+        </div>
+        <div style="text-align: center; color: #212121; max-width: 600px; margin: 0 auto; margin-right: 150px;">
+            <span style="font-size: 40px; display: block; margin-bottom: 20px;">
+                Présentation
+            </span>
+            <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 50%;">
+            <br /><br />
+            <span style="font-size: 20px; line-height: 1.6;">
+                Je m'appelle Zachary Winkler. Je suis actuellement en BTS SIO (Service informatique aux organisations) spécialité SISR
+                (Solutions infrastructure, systèmes et réseaux). Cette formation me permet d'acquérir des compétences dans la technologie
+                de réseaux et dans l'architecture des ordinateurs, la sécurité des réseaux, les bases de données et la maintenance d'un
+                système d'information dans une entreprise.
+            </span>
+            <br /><br /><br />
+            <a href="/images/CV.pdf" download>
+                <button class="download-button">Mon CV</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Competences -->
+    <div id="competences" style="background-color:#ccc; padding: 20px; position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 800px;">
+        <div style="text-align: center; color: #212121; max-width: 600px; margin: 0 auto; margin-left: 150px;">
+            <span style="font-size: 40px; display: block; margin-bottom: 20px;">
+                Compétences
+            </span>
+            <hr style="border-top: 1px solid #000000; margin: 0 auto; width: 50%;">
+            <br /><br />
+            <span style="font-size: 20px; line-height: 1.6;">
+                Actuellement apprenti administrateur systèmes et réseaux, je cumule de l'expérience dans la conception, la mise
+                en œuvre et la gestion d'infrastructures informatiques et dans l'exploitation de logiciels. Ma polyvalence s'étend
+                à la l'administration de serveurs, la gestion de réseau, la virtualisation, la configuration des pare-feu, et
+                l'automatisation des tâches avec des outils tels que PowerShell. Sensible à la qualité du service et à la sécurité
+                informatique, je suis déterminé à relever les défis complexes de l'administration des systèmes et des réseaux.
+            </span>
+        </div>
+        <div class="image-container">
+            <div class="slide" id="slide">
+                <img src="/images/image1.png" alt="Image 1">
+            </div>
+            <div class="slide" id="slide2">
+                <img src="/images/image2.png" alt="Image 2">
+            </div>
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://github.com/zac7518"><img src="/images/github1.svg" /></a>
+            <a href="https://www.linkedin.com/in/zachary-winkler-05689a198/"><img src="/images/linkedin1.svg" /></a>
+            <a href="mailto:winkler75013@gmail.com"><img src="/images/mail1.svg" /></a>
+        </div>
+        <div class="creator-info">
+            <p>Created by Zachary Winkler™</p>
+        </div>
+    </footer>
+</body>
+</html>
