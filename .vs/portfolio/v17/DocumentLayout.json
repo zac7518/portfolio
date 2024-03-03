@@ -1,38 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\",
+  "WorkspaceRootPath": "C:\\Users\\Zac\\Projets\\portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zac\\Projets\\portfolio\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\veille.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:veille.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\productions.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:productions.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\situations.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:situations.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\missionsformation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:missionsformation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\missionsentreprise.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:missionsentreprise.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\tableausynthese.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tableausynthese.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\entreprise.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:entreprise.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,111 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\index.html",
+              "DocumentMoniker": "C:\\Users\\Zac\\Projets\\portfolio\\index.html",
               "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\index.html",
+              "ToolTip": "C:\\Users\\Zac\\Projets\\portfolio\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AQIAAOgAAAAAAAAAAAAAAPEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T12:36:10.653Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "entreprise.html",
-              "DocumentMoniker": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\entreprise.html",
-              "RelativeDocumentMoniker": "entreprise.html",
-              "ToolTip": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\entreprise.html",
-              "RelativeToolTip": "entreprise.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T16:54:17.524Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "tableausynthese.html",
-              "DocumentMoniker": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\tableausynthese.html",
-              "RelativeDocumentMoniker": "tableausynthese.html",
-              "ToolTip": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\tableausynthese.html",
-              "RelativeToolTip": "tableausynthese.html",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAswLwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T12:36:14.094Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "missionsformation.html",
-              "DocumentMoniker": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\missionsformation.html",
-              "RelativeDocumentMoniker": "missionsformation.html",
-              "ToolTip": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\missionsformation.html",
-              "RelativeToolTip": "missionsformation.html",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAswLwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T12:36:12.202Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "missionsentreprise.html",
-              "DocumentMoniker": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\missionsentreprise.html",
-              "RelativeDocumentMoniker": "missionsentreprise.html",
-              "ToolTip": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\missionsentreprise.html",
-              "RelativeToolTip": "missionsentreprise.html",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAswLwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T12:36:11.488Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "situations.html",
-              "DocumentMoniker": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\situations.html",
-              "RelativeDocumentMoniker": "situations.html",
-              "ToolTip": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\situations.html",
-              "RelativeToolTip": "situations.html",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAswLwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T12:36:13.636Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "productions.html",
-              "DocumentMoniker": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\productions.html",
-              "RelativeDocumentMoniker": "productions.html",
-              "ToolTip": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\productions.html",
-              "RelativeToolTip": "productions.html",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAswLwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T12:36:12.751Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "veille.html",
-              "DocumentMoniker": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\veille.html",
-              "RelativeDocumentMoniker": "veille.html",
-              "ToolTip": "C:\\Users\\Zac\\Documents\\portfolio\\portfolio\\veille.html",
-              "RelativeToolTip": "veille.html",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAswLwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T12:36:14.649Z",
+              "WhenOpened": "2024-03-03T18:25:17.69Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
